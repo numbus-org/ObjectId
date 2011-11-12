@@ -3,7 +3,6 @@ var vows = require('vows'),
     ObjectId = require('../lib/ObjectID').ObjectId,
     test;
 
-console.log(new ObjectId().toString());
 for (var i=0;i<1000;i++){
   test = new ObjectId().toString();
   vows.describe('Generate an ObjectId like BSON spec ' + i).addBatch({
